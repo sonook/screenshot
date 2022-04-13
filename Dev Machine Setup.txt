@@ -1,0 +1,15 @@
+asdf is a CLI tool that can manage multiple language runtime versions on a per-project basis. 
+It is like gvm , nvm , rbenv & pyenv (and more) all in one!
+
+sudo apt-get update
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline-dev zlib1g-dev libncurses-dev libffi-dev libgdbm-dev
+sudo apt install curl git
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+Call code ~/.bashrc in your terminal
+Add . $HOME/.asdf/asdf.sh and . $HOME/.asdf/completions/asdf.bash in the end of .bashrc file
+
+Using asdf for installation of deno
+asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
+asdf install deno 1.15.3
+asdf list
+which deno
