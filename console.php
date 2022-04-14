@@ -1,4 +1,7 @@
 <?php
-$output = shell_exec('ls -lart | grep ps1');
-echo "<pre>$output</pre>";
+$a = readline('Domain Name: ');
+#$output = shell_exec('nslookup '.$a);
+#echo $output;
+$output1 = shell_exec('nslookup -type=mx'.$a);
+echo $output1;
 ?>
